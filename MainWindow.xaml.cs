@@ -57,41 +57,6 @@ namespace WpfAppTicTacToe
             }
         }
 
-        //private void CheckForWin()
-        //{
-        //    if (tb1.Text != "   " && tb1.Text == tb2.Text && tb2.Text == tb3.Text)
-        //    {
-        //        GameOver();
-        //    }
-        //    else if(tb4.Text != "   " && tb4.Text == tb5.Text && tb5.Text == tb6.Text)
-        //    {
-        //        GameOver();
-        //    }
-        //    else if(tb1.Text != "   " && tb7.Text == tb8.Text && tb8.Text == tb9.Text)
-        //    {
-        //        GameOver();
-        //    }
-        //    else if(tb1.Text != "   " && tb1.Text == tb4.Text && tb4.Text == tb7.Text)
-        //    {
-        //        GameOver();
-        //    }
-        //    else if(tb1.Text != "   " && tb2.Text == tb5.Text && tb5.Text == tb8.Text)
-        //    {
-        //        GameOver();
-        //    }
-        //    else if(tb1.Text != "   " && tb3.Text == tb6.Text && tb6.Text == tb9.Text)
-        //    {
-        //        GameOver();
-        //    }
-        //    else if(tb1.Text != "   " && tb1.Text == tb5.Text && tb5.Text == tb9.Text)
-        //    {
-        //        GameOver();
-        //    }
-        //    else if(tb1.Text != "   " && tb3.Text == tb5.Text && tb5.Text == tb7.Text)
-        //    {
-        //        GameOver();
-        //    }
-        //}
         private void CheckForWin()
         {
             var winColor = Brushes.Orange;
