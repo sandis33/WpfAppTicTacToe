@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfAppTicTacToe"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="506">
-    <Grid ShowGridLines="True">
+    <Grid x:Name="MainGrid" ShowGridLines="True">
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
@@ -17,14 +17,14 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <TextBlock Text="   " Grid.Row="0" Grid.Column="0" FontSize="72" VerticalAlignment="Center" HorizontalAlignment="Center" MouseDown="TextBlock_MouseDown"></TextBlock>
-        <TextBlock Text="   " Grid.Row="0" Grid.Column="1" FontSize="72" VerticalAlignment="Center" HorizontalAlignment="Center" MouseDown="TextBlock_MouseDown"></TextBlock>
-        <TextBlock Text="   " Grid.Row="0" Grid.Column="2" FontSize="72" VerticalAlignment="Center" HorizontalAlignment="Center" MouseDown="TextBlock_MouseDown"></TextBlock>
-        <TextBlock Text="   " Grid.Row="1" Grid.Column="0" FontSize="72" VerticalAlignment="Center" HorizontalAlignment="Center" MouseDown="TextBlock_MouseDown"></TextBlock>
-        <TextBlock Text="   " Grid.Row="1" Grid.Column="1" FontSize="72" VerticalAlignment="Center" HorizontalAlignment="Center" MouseDown="TextBlock_MouseDown"></TextBlock>
-        <TextBlock Text="   " Grid.Row="1" Grid.Column="2" FontSize="72" VerticalAlignment="Center" HorizontalAlignment="Center" MouseDown="TextBlock_MouseDown"></TextBlock>
-        <TextBlock Text="   " Grid.Row="2" Grid.Column="0" FontSize="72" VerticalAlignment="Center" HorizontalAlignment="Center" MouseDown="TextBlock_MouseDown"></TextBlock>
-        <TextBlock Text="   " Grid.Row="2" Grid.Column="1" FontSize="72" VerticalAlignment="Center" HorizontalAlignment="Center" MouseDown="TextBlock_MouseDown"></TextBlock>
-        <TextBlock Text="   " Grid.Row="2" Grid.Column="2" FontSize="72" VerticalAlignment="Center" HorizontalAlignment="Center" MouseDown="TextBlock_MouseDown"></TextBlock>
+        <TextBlock x:Name="tb1" Text="   " Grid.Row="0" Grid.Column="0" FontSize="72" VerticalAlignment="Center" HorizontalAlignment="Center" MouseDown="TextBlock_MouseDown"></TextBlock>
+        <TextBlock x:Name="tb2" Text="   " Grid.Row="0" Grid.Column="1" FontSize="72" VerticalAlignment="Center" HorizontalAlignment="Center" MouseDown="TextBlock_MouseDown"></TextBlock>
+        <TextBlock x:Name="tb3" Text="   " Grid.Row="0" Grid.Column="2" FontSize="72" VerticalAlignment="Center" HorizontalAlignment="Center" MouseDown="TextBlock_MouseDown"></TextBlock>
+        <TextBlock x:Name="tb4" Text="   " Grid.Row="1" Grid.Column="0" FontSize="72" VerticalAlignment="Center" HorizontalAlignment="Center" MouseDown="TextBlock_MouseDown"></TextBlock>
+        <TextBlock x:Name="tb5" Text="   " Grid.Row="1" Grid.Column="1" FontSize="72" VerticalAlignment="Center" HorizontalAlignment="Center" MouseDown="TextBlock_MouseDown"></TextBlock>
+        <TextBlock x:Name="tb6" Text="   " Grid.Row="1" Grid.Column="2" FontSize="72" VerticalAlignment="Center" HorizontalAlignment="Center" MouseDown="TextBlock_MouseDown"></TextBlock>
+        <TextBlock x:Name="tb7" Text="   " Grid.Row="2" Grid.Column="0" FontSize="72" VerticalAlignment="Center" HorizontalAlignment="Center" MouseDown="TextBlock_MouseDown"></TextBlock>
+        <TextBlock x:Name="tb8" Text="   " Grid.Row="2" Grid.Column="1" FontSize="72" VerticalAlignment="Center" HorizontalAlignment="Center" MouseDown="TextBlock_MouseDown"></TextBlock>
+        <TextBlock x:Name="tb9" Text="   " Grid.Row="2" Grid.Column="2" FontSize="72" VerticalAlignment="Center" HorizontalAlignment="Center" MouseDown="TextBlock_MouseDown"></TextBlock>
     </Grid>
 </Window>
