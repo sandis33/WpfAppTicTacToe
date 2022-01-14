@@ -114,11 +114,55 @@ namespace WpfAppTicTacToe
         private void GameOver()
         {
             MessageBox.Show($"Game Over, {turn} Wins!");
+            RestartButton.Visibility = Visibility.Visible;
         }
 
         private void Tie()
         {
             MessageBox.Show("It's a tie!");
+            RestartButton.Visibility = Visibility.Visible;
+
+        }
+        private void Restart()
+///
+///         Actions for restarting the game.
+/// 
+        {
+            var startColor = Brushes.Black;
+///
+///         Changes starting color.
+///
+            tb1.Text = "   ";
+            tb2.Text = "   ";
+            tb3.Text = "   ";
+            tb4.Text = "   ";
+            tb5.Text = "   ";
+            tb6.Text = "   ";
+            tb7.Text = "   ";
+            tb8.Text = "   ";
+            tb9.Text = "   ";
+///
+///         Removes "X" and "O" from the grid.
+///
+            tb1.Foreground = tb2.Foreground = tb3.Foreground = startColor;
+            tb4.Foreground = tb5.Foreground = tb6.Foreground = startColor;
+            tb7.Foreground = tb8.Foreground = tb9.Foreground = startColor;
+///
+///         Changes back color from winners color.
+///
+            moves = 0;
+///
+///         Resets move counter back to 0.
+
+            RestartButton.Visibility = Visibility.Collapsed;
+///
+///         Changes Restart button back to being invisible after starting game.
+///         
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Restart();
         }
     }
 }
