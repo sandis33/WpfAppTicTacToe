@@ -26,7 +26,7 @@
         <TextBlock x:Name="tb7" Text="   " Grid.Row="2" Grid.Column="0" FontSize="72" VerticalAlignment="Center" HorizontalAlignment="Center" MouseDown="TextBlock_MouseDown"></TextBlock>
         <TextBlock x:Name="tb8" Text="   " Grid.Row="2" Grid.Column="1" FontSize="72" VerticalAlignment="Center" HorizontalAlignment="Center" MouseDown="TextBlock_MouseDown"></TextBlock>
         <TextBlock x:Name="tb9" Text="   " Grid.Row="2" Grid.Column="2" FontSize="72" VerticalAlignment="Center" HorizontalAlignment="Center" MouseDown="TextBlock_MouseDown"></TextBlock>
-        <Button x:Name="RestartButton" Content="Restart" HorizontalAlignment="Left" Margin="168,42,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="54" Width="78" Grid.ColumnSpan="2" Click="Button_Click" FontSize="18" Background="#FF00EAFC" Visibility="Collapsed">
+        <Button x:Name="RestartButton" Content="Restart" HorizontalAlignment="Left" Margin="168,42,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="54" Width="85" Grid.ColumnSpan="2" Click="Button_Click" FontSize="18" Background="#FF00EAFC" Visibility="Collapsed">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -36,5 +36,6 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
+        <Button x:Name="QuitButton" Grid.Column="1" Content="Quit" HorizontalAlignment="Left" Margin="84,42,0,0" Grid.Row="1" VerticalAlignment="Top" Height="54" Width="84" FontSize="18" Background="#FF00EAFC" Click="QuitButton_Click" Visibility="Collapsed"/>
     </Grid>
 </Window>
