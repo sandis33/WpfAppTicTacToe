@@ -21,11 +21,13 @@ namespace WpfAppTicTacToe
     public partial class MainWindow : Window
     {
         private string turn = string.Empty;
+        private int moves = 0;
 
         public MainWindow()
         {
             InitializeComponent();
             InitializeGame();
+            
         }
 
         private void InitializeGame()
@@ -36,9 +38,11 @@ namespace WpfAppTicTacToe
         private void TextBlock_MouseDown(object sender, MouseButtonEventArgs e)
         {
             TextBlock tb = (TextBlock)sender;
-            
+
+
             if(tb.Text != "X" && tb.Text != "O")
             {
+                moves++;
                 tb.Text = turn;
                 CheckForWin();
                 SwitchTurn();
@@ -101,11 +105,20 @@ namespace WpfAppTicTacToe
                 tb3.Foreground = tb5.Foreground = tb7.Foreground = winColor;
                 GameOver();
             }
+            else if (moves == 9)
+            {
+                Tie();
+            }
         }
 
         private void GameOver()
         {
             MessageBox.Show($"Game Over, {turn} Wins!");
+        }
+
+        private void Tie()
+        {
+            MessageBox.Show("It's a tie!");
         }
     }
 }
